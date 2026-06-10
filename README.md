@@ -1,7 +1,6 @@
 <img width="1536" height="1024" alt="ChatGPT Image Jun 10, 2026, 12_21_10 PM" src="https://github.com/user-attachments/assets/19a878ef-c4d6-4053-90a6-61d4df201911" />
 <img width="1536" height="1024" alt="ChatGPT Image Jun 10, 2026, 12_40_41 PM" src="https://github.com/user-attachments/assets/807c460c-f1e0-4716-accb-65ba11caaaa5" />
-<img width="2940" height="1912" alt="739B0F91-1337-401F-83AC-44C8DB40B9C1" src="https://github.com/user-attachments/assets/38996628-a00a-40e7-9ae1-03f9935f15a3" />
-
+<img width="2940" height="1912" alt="4B4D7CA1-6F23-4115-B81C-F940833AD928" src="https://github.com/user-attachments/assets/23119925-50a6-4faa-b002-8d2b359f1fe8" />
 
 <div align="center">
 
