@@ -1,9 +1,12 @@
 <img width="1536" height="1024" alt="ChatGPT Image Jun 10, 2026, 12_21_10 PM" src="https://github.com/user-attachments/assets/19a878ef-c4d6-4053-90a6-61d4df201911" />
 <img width="1536" height="1024" alt="ChatGPT Image Jun 10, 2026, 12_21_16 PM" src="https://github.com/user-attachments/assets/3bd60195-e35d-4a93-87d5-8de0cda102c4" />
-
+<div align="center">
 
 <div align="center">
-  
+  This Project Has Been Compleated And Ready to Launch
+  -All Feature Testing Done
+  -This Project is only for showcase and not available for public distribution
+</div>
 # 🧠 LUMIVRA AI
 
 ### Your Intelligent AI Coding Companion
@@ -544,6 +547,17 @@ This project is licensed under the MIT License.
 ---
 
 <div align="center">
-  <p>Built with ❤️ by Gautham Jayesh</p>
-  <p>⭐ Star this repo if you found it useful!</p>
+
+### 🚀 DEVELOPED BY GAUTHAM JAYESH 🚀
+
+**Next.js 16 • TypeScript • Supabase • Groq Cloud • Mantine UI • Pyodide**
+
+## License
+
+Copyright © 2026 Gautham Jayesh.
+
+This repository is published for portfolio and demonstration purposes only.
+
+Lumivra AI is a personal project published to showcase my software engineering, AI integration, and full-stack development skills. The source code is not open source and may not be copied, modified, redistributed, or used without permission.
+
 </div>
