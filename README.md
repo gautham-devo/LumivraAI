@@ -26,26 +26,6 @@
 
 </div>
 
----
-
-## 📸 Screenshots
-
-<div align="center">
-  <img src="screenshots/chat-dark.png" alt="Chat Dark Mode" width="80%" />
-  <p><em>Chat Interface — Dark Mode</em></p>
-  
-  <img src="screenshots/chat-light.png" alt="Chat Light Mode" width="80%" />
-  <p><em>Chat Interface — Light Mode</em></p>
-  
-  <img src="screenshots/code-execution.png" alt="Code Execution" width="80%" />
-  <p><em>In-Browser Code Execution with Input Modal</em></p>
-  
-  <img src="screenshots/settings.png" alt="Settings Page" width="80%" />
-  <p><em>Settings Page with AI Memories</em></p>
-</div>
-
----
-
 ## ✨ Features
 
 ### 💬 Chat & Messaging
