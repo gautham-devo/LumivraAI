@@ -165,107 +165,108 @@ A full-stack AI platform combining a GPT-style chatbot with local AI music proce
 ---
 
 ## 📁 Project Structure
-
-```
-lumivra-ai/  (a.k.a. synapse-ai/)
+lumivra-ai/
 │
-├── app/                              # Next.js App Router
+├── app/
 │   ├── (auth)/
-│   │   ├── login/page.tsx            # Login page
-│   │   └── signup/page.tsx           # Signup page
+│   │   ├── login/
+│   │   │   └── page.tsx
+│   │   └── signup/
+│   │       └── page.tsx
 │   ├── api/
+│   │   ├── auth/
+│   │   │   └── callback/
+│   │   │       └── route.ts
 │   │   ├── chat/
-│   │   │   ├── route.ts              # Streaming AI + vision + memory
-│   │   │   └── title/route.ts        # Auto-generate chat titles
-│   │   ├── memory/extract/route.ts   # AI memory auto-extraction
-│   │   ├── parse-pdf/route.ts        # Server-side PDF parsing
-│   │   └── auth/callback/route.ts    # OAuth handler
+│   │   │   ├── route.ts
+│   │   │   └── title/
+│   │   │       └── route.ts
+│   │   ├── memory/
+│   │   │   └── extract/
+│   │   │       └── route.ts
+│   │   └── parse-pdf/
+│   │       └── route.ts
 │   ├── chat/
-│   │   ├── layout.tsx                # Chat layout
-│   │   └── page.tsx                  # Chat page
+│   │   ├── layout.tsx
+│   │   └── page.tsx
 │   ├── music/
-│   │   └── page.tsx                  # Music Studio page
-│   ├── settings/page.tsx             # Settings page
-│   ├── globals.css                   # Global styles + animations
-│   ├── layout.tsx                    # Root layout (loads Pyodide)
-│   └── page.tsx                      # Redirects to /login
+│   │   └── page.tsx
+│   ├── settings/
+│   │   └── page.tsx
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
 │
 ├── components/
 │   ├── chat/
-│   │   ├── ChatArea.tsx              # Main chat area
-│   │   ├── MessageBubble.tsx         # Message + code execution + input modal
-│   │   ├── PromptInput.tsx           # Input + file attach + paste + drag
-│   │   ├── ChatSkeleton.tsx          # Loading skeleton
-│   │   └── TopBar.tsx                # Theme toggle + settings
-│   ├── music/                        # Music Studio UI
-│   │   ├── MusicStudio.tsx           # Main 4-tab UI
-│   │   ├── SongUploader.tsx          # Drag-drop song upload
-│   │   ├── AudioPlayer.tsx           # Custom audio player
-│   │   ├── VoiceTrainer.tsx          # Voice training UI
-│   │   ├── VoiceModelList.tsx        # Manage voice models
-│   │   └── VoiceSwapper.tsx          # Voice swap UI
+│   │   ├── ChatArea.tsx
+│   │   ├── ChatSkeleton.tsx
+│   │   ├── MessageBubble.tsx
+│   │   ├── PromptInput.tsx
+│   │   └── TopBar.tsx
+│   ├── music/
+│   │   ├── AudioPlayer.tsx
+│   │   ├── MusicStudio.tsx
+│   │   ├── SongUploader.tsx
+│   │   ├── VoiceModelList.tsx
+│   │   ├── VoiceSwapper.tsx
+│   │   └── VoiceTrainer.tsx
 │   └── sidebar/
-│       └── Sidebar.tsx               # Chat list + Music link + profile
+│       └── Sidebar.tsx
 │
 ├── lib/
+│   ├── contexts/
+│   │   └── UserContext.tsx
+│   ├── hooks/
+│   │   └── useLogout.ts
 │   ├── supabase/
-│   │   ├── client.ts                 # Browser Supabase client
-│   │   ├── server.ts                 # Server Supabase client
-│   │   ├── middleware.ts             # Session handler
-│   │   ├── chats.ts                  # Chat DB operations
-│   │   ├── settings.ts               # Settings DB operations
-│   │   └── memories.ts               # Memory DB operations
-│   ├── contexts/UserContext.tsx      # User context provider
-│   ├── hooks/useLogout.ts            # Logout hook
-│   ├── fileParser.ts                 # File parsing (PDF, DOCX, etc.)
-│   ├── codeRunner.ts                 # Code execution (JS + Python)
-│   ├── notify.ts                     # Notifications
-│   ├── utils.ts                      # Helper functions
-│   └── musicApi.ts                   # Music server API client
+│   │   ├── chats.ts
+│   │   ├── client.ts
+│   │   ├── memories.ts
+│   │   ├── middleware.ts
+│   │   ├── server.ts
+│   │   └── settings.ts
+│   ├── codeRunner.ts
+│   ├── fileParser.ts
+│   ├── musicApi.ts
+│   ├── notify.ts
+│   └── utils.ts
+│
+├── music-server/
+│   ├── RVC/                          (cloned from RVC repo - in .gitignore)
+│   ├── models/                       (trained voice models - in .gitignore)
+│   ├── output/                       (generated files - in .gitignore)
+│   ├── temp/                         (temp files - in .gitignore)
+│   ├── training_data/                (raw voice files - in .gitignore)
+│   ├── converter.py
+│   ├── mixer.py
+│   ├── requirements.txt
+│   ├── rvc_wrapper.py
+│   ├── separator.py
+│   ├── server.py
+│   ├── setup.py
+│   └── trainer.py
+│
+├── public/
+│   └── (your images / icons)
 │
 ├── store/
-│   └── chatStore.ts                  # Zustand state
+│   └── chatStore.ts
 │
-├── types/index.ts                    # TypeScript interfaces
+├── types/
+│   └── index.ts
 │
-├── music-server/                     # PYTHON AI BACKEND
-│   ├── server.py                     # FastAPI main server
-│   ├── separator.py                  # Demucs vocal separation
-│   ├── trainer.py                    # Voice model training
-│   ├── converter.py                  # Voice conversion
-│   ├── mixer.py                      # FFmpeg audio mixing
-│   ├── rvc_wrapper.py                # RVC v2 integration
-│   ├── setup.py                      # Auto installer (legacy)
-│   ├── requirements.txt              # Python dependencies
-│   ├── RVC/                          # RVC v2 repo (cloned)
-│   │   ├── assets/
-│   │   │   ├── pretrained_v2/        # f0G40k.pth, f0D40k.pth
-│   │   │   ├── hubert/                # hubert_base.pt
-│   │   │   ├── rmvpe/                 # rmvpe.pt
-│   │   │   └── weights/               # Trained models
-│   │   ├── infer/                    # RVC inference scripts
-│   │   ├── tools/                    # RVC tools
-│   │   ├── logs/                      # Training logs per model
-│   │   └── download_models.py        # Pretrained downloader
-│   ├── temp/                          # Temporary audio files
-│   ├── models/                        # Trained voice models metadata
-│   ├── output/                        # Final output files
-│   └── training_data/                 # User voice recordings
-│
-├── .venv/                             # Python virtual environment
-│
-├── .env.local                         # Environment variables (NOT in git)
+├── .env.local                        (NOT in git)
 ├── .gitignore
+├── eslint.config.mjs
+├── middleware.ts
+├── next.config.ts
 ├── package.json
 ├── pnpm-lock.yaml
-├── theme.ts                           # Mantine theme config
-├── middleware.ts
 ├── postcss.config.mjs
-├── next.config.ts
-├── tsconfig.json
-└── README.md
-```
-
+├── README.md
+├── theme.ts
+└── tsconfig.json
 ---
 
 ## 🗄️ Database Schema
