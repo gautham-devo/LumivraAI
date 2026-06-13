@@ -162,7 +162,7 @@ A full-stack AI platform combining a GPT-style chatbot with local AI music proce
 | gemma2-9b-it | Efficient |
 | meta-llama/llama-4-scout-17b-16e-instruct | Vision |
 
----
+```
 
 ## 📁 Project Structure
 lumivra-ai/
@@ -267,7 +267,7 @@ lumivra-ai/
 ├── README.md
 ├── theme.ts
 └── tsconfig.json
----
+```
 
 ## 🗄️ Database Schema
 
