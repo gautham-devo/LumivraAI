@@ -162,11 +162,10 @@ A full-stack AI platform combining a GPT-style chatbot with local AI music proce
 | gemma2-9b-it | Efficient |
 | meta-llama/llama-4-scout-17b-16e-instruct | Vision |
 
-```
-
 ## 📁 Project Structure
+
+```
 lumivra-ai/
-│
 ├── app/
 │   ├── (auth)/
 │   │   ├── login/
@@ -196,7 +195,6 @@ lumivra-ai/
 │   ├── globals.css
 │   ├── layout.tsx
 │   └── page.tsx
-│
 ├── components/
 │   ├── chat/
 │   │   ├── ChatArea.tsx
@@ -213,7 +211,6 @@ lumivra-ai/
 │   │   └── VoiceTrainer.tsx
 │   └── sidebar/
 │       └── Sidebar.tsx
-│
 ├── lib/
 │   ├── contexts/
 │   │   └── UserContext.tsx
@@ -231,13 +228,12 @@ lumivra-ai/
 │   ├── musicApi.ts
 │   ├── notify.ts
 │   └── utils.ts
-│
 ├── music-server/
-│   ├── RVC/                          (cloned from RVC repo - in .gitignore)
-│   ├── models/                       (trained voice models - in .gitignore)
-│   ├── output/                       (generated files - in .gitignore)
-│   ├── temp/                         (temp files - in .gitignore)
-│   ├── training_data/                (raw voice files - in .gitignore)
+│   ├── RVC/            ← cloned repo (.gitignore)
+│   ├── models/         ← trained voice models (.gitignore)
+│   ├── output/         ← generated files (.gitignore)
+│   ├── temp/           ← temp files (.gitignore)
+│   ├── training_data/  ← raw voice files (.gitignore)
 │   ├── converter.py
 │   ├── mixer.py
 │   ├── requirements.txt
@@ -246,17 +242,12 @@ lumivra-ai/
 │   ├── server.py
 │   ├── setup.py
 │   └── trainer.py
-│
 ├── public/
-│   └── (your images / icons)
-│
 ├── store/
 │   └── chatStore.ts
-│
 ├── types/
 │   └── index.ts
-│
-├── .env.local                        (NOT in git)
+├── .env.local          ← NOT in git
 ├── .gitignore
 ├── eslint.config.mjs
 ├── middleware.ts
