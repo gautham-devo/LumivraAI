@@ -1,7 +1,8 @@
-<img width="1536" height="1024" alt="ChatGPT Image Jun 10, 2026, 12_21_10 PM" src="https://github.com/user-attachments/assets/19a878ef-c4d6-4053-90a6-61d4df201911" />
-<img width="1536" height="1024" alt="ChatGPT Image Jun 10, 2026, 12_40_41 PM" src="https://github.com/user-attachments/assets/807c460c-f1e0-4716-accb-65ba11caaaa5" />
-<img width="2940" height="1912" alt="DA34F663-6BBF-4E25-84C7-C6367DA5568C" src="https://github.com/user-attachments/assets/a0d56669-e77f-4a6a-8582-aadb2082de40" />
-<img width="2940" height="1912" alt="5CAEED17-824F-4151-9DB3-7BA9C1905292" src="https://github.com/user-attachments/assets/058c203f-7959-4786-add0-d6a50722e144" />
+<img width="1536" height="1024" alt="ChatGPT Image Jun 13, 2026, 11_04_13 PM" src="https://github.com/user-attachments/assets/65d6a15b-a42d-4e50-98ce-b688e92506ec" />
+<img width="1905" height="946" alt="image" src="https://github.com/user-attachments/assets/ca30525e-109a-45e7-9823-bcd7c9b307c9" />
+<img width="1905" height="941" alt="image" src="https://github.com/user-attachments/assets/00c1834a-6303-4f52-8582-c859e459714a" />
+<img width="1906" height="946" alt="image" src="https://github.com/user-attachments/assets/5d00cd33-cd21-4976-91d1-c5bd09ad8d95" />
+<img width="1909" height="939" alt="image" src="https://github.com/user-attachments/assets/125d8ce7-007f-4578-83ed-60a89b37e49b" />
 
 <div align="center">
 
@@ -10,312 +11,312 @@
   -All Feature Testing Done
   -This Project is only for showcase and not available for public distribution
 </div>
-# 🧠 LUMIVRA AI
+# 🧠 LUMIVRA AI — Complete Documentation
 
-### Your Intelligent AI Coding Companion
+> Intelligent AI Coding Companion + Local AI Music Studio
+>
+> ✅ Project Complete & Ready to Launch
+> ⚠️ Showcase Only — Not for Public Use
 
-[![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)](https://nextjs.org)
-[![Supabase](https://img.shields.io/badge/Supabase-Database-3FCF8E?logo=supabase)](https://supabase.com)
-[![Groq](https://img.shields.io/badge/Groq-AI%20Engine-orange)](https://groq.com)
-[![Mantine](https://img.shields.io/badge/Mantine-UI-339AF0?logo=mantine)](https://mantine.dev)
-[![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178C6?logo=typescript)](https://typescriptlang.org)
+A full-stack AI platform combining a GPT-style chatbot with local AI music processing (vocal separation + voice cloning + voice swap).
 
-**A full-featured AI chatbot built with Next.js, Supabase, Groq Cloud, and Mantine UI.**  
-**Supports streaming, file uploads, image analysis, AI memory, and in-browser code execution.**
+**Stack:** Next.js · Supabase · Groq · Mantine · TypeScript · Python · PyTorch · RVC
 
-[Live Demo](#) · [Report Bug](https://github.com/yourusername/lumivra-ai/issues) · [Request Feature](https://github.com/yourusername/lumivra-ai/issues)
+---
 
-</div>
+## 📑 Table of Contents
+1. [Features](#-features)
+2. [Tech Stack](#-tech-stack)
+3. [Project Structure](#-project-structure)
+4. [Database Schema](#-database-schema)
+5. [Installation — Mac](#-installation--mac-m1m2m3m4)
+6. [Installation — Windows (RTX GPU)](#-installation--windows-pc-rtx-gpu)
+7. [RVC Setup (Optional)](#-rvc-setup-optional--studio-quality)
+8. [Running the Project](#-running-the-project)
+9. [How Each Feature Works](#-how-each-feature-works)
+10. [Music Server API](#-music-server-api)
+11. [Troubleshooting](#-troubleshooting)
+12. [Roadmap & Scaling](#-roadmap--scaling)
+13. [Security](#-security)
+14. [Key Dependencies](#-key-dependencies)
+15. [Achievement Stats](#-achievement-stats)
+16. [Author & License](#-author)
+
+---
 
 ## ✨ Features
 
-### 💬 Chat & Messaging
-- **Real-time streaming responses** — AI responses appear word-by-word like ChatGPT
-- **Stop generation** — Cancel AI response mid-stream
-- **Edit messages** — Modify sent messages and regenerate AI response
-- **Markdown rendering** — Full markdown support with syntax highlighting
-- **Code blocks** — Language-specific syntax highlighting with one-click copy
-- **Auto-generated titles** — AI creates smart titles for each conversation
+### 💬 AI Chat (LUMIVRA Core)
+- Real-time streaming — word-by-word like ChatGPT
+- Stop generation mid-stream
+- Edit messages & regenerate AI response
+- Markdown rendering with syntax highlighting
+- Auto-generated chat titles by AI
+- 4 AI models (Llama 3.3 70B, 3.1 8B, Mixtral 8x7B, Gemma 2 9B)
+- Vision model for image analysis (Llama 4 Scout)
+- Temperature control (Focused → Creative)
 
 ### ⚡ In-Browser Code Execution
-- **▶ Run button** on every code block (JavaScript & Python)
-- **Live output panel** — Shows results instantly below code
-- **Input modal** — Interactive popup when code uses `input()` or `prompt()`
-- **Auto input detection** — Extracts prompt text from code as labels
-- **Multiple inputs supported** — Handle complex programs needing several inputs
-- **Languages supported:**
-  - 🟨 **JavaScript** — Runs instantly using browser eval (safe sandbox)
-  - 🐍 **Python** — Powered by **Pyodide** (Python compiled to WebAssembly)
-- **Console capture** — `console.log()`, `print()`, errors all shown in output
-- **Cancel option** — Stop input modal anytime
+- ▶ Run button on every code block
+- JavaScript — browser sandbox `eval()`
+- Python — Pyodide (WebAssembly)
+- Interactive input modal for `input()` / `prompt()`
+- Console capture — log, errors, output
 
-### 📎 File Attachments
-- **Click to attach** — File picker for all supported formats
-- **Paste to attach** — Ctrl/Cmd+V to paste screenshots or files
-- **Drag and drop** — Drag files directly onto the input area
-- **Clean file chips** — Files show as compact chips (like ChatGPT), not raw content dumps
-- **Supported formats:**
-  - 💻 Code: `.js`, `.ts`, `.py`, `.java`, `.cpp`, `.go`, `.rs`, `.php`, `.rb`, `.swift`, `.kt`, `.dart` + more
-  - 📝 Text: `.txt`, `.md`, `.log`
-  - 📊 Data: `.json`, `.csv`, `.xml`, `.yaml`
-  - 📕 PDF: Full text extraction (server-side parsing)
-  - 📘 DOCX: Word document text extraction
-  - 🌐 Web: `.html`, `.css`, `.scss`, `.svg`
-  - 🖼️ Images: `.jpg`, `.png`, `.webp`, `.gif` (with AI vision analysis)
-
-### 🖼️ Image Understanding
-- **Upload screenshots** — AI analyzes images using Groq Vision model
-- **Error analysis** — Upload screenshot of code errors → AI explains & fixes
-- **UI analysis** — Upload UI mockups → AI describes and suggests improvements
-- **Auto model switching** — Automatically uses vision model when images are detected
-- **Vision model:** `meta-llama/llama-4-scout-17b-16e-instruct`
+### 📎 File Support
+- Code: `.js .ts .py .java .cpp .go .rs .php .rb .swift .kt .dart`
+- Documents: `.pdf .docx .txt .md .log`
+- Data: `.json .csv .xml .yaml`
+- Web: `.html .css .scss .svg`
+- Images: `.jpg .png .webp .gif` (AI vision analysis)
+- Upload methods: Click, Paste (Cmd/Ctrl+V), Drag-drop
 
 ### 🧠 AI Memory
-- **Automatic extraction** — AI picks up facts about you from conversations
-- **Cross-chat memory** — Remembers your preferences across ALL chats
-- **Manual control** — Add, view, and delete memories in Settings
-- **Smart deduplication** — Won't store duplicate memories
-- **Privacy first** — You see everything stored, delete anytime
-- **Examples:** "User's name is Gautham", "Prefers TypeScript", "Building a startup"
+- Auto-extracts facts about you
+- Persists across all chats
+- Manual add/delete in Settings
+- Smart deduplication
 
 ### 📌 Chat Management
-- **Pin important chats** — Pinned chats stay at the top of sidebar
-- **Pinned/Recent sections** — Visual separation in sidebar
-- **Delete individual chats** — Hover to see delete button
-- **Delete all chats** — Nuclear option with confirmation modal
-- **Search chats** — Filter chats by title
-- **Export all chats** — Download as JSON file
+- Pin important chats
+- Search by title
+- Delete individual / all chats
+- Export as JSON
 
-### 🤖 AI Model Switching
-- **4 Groq models available:**
+### 🎵 Music Studio (Local AI)
+- **Vocal Separation** — split songs into vocals + instrumental (Meta's Demucs)
+- **Voice Training** — train AI on your voice (custom encoder + RVC v2)
+- **Voice Swap** — replace song's singer with your voice
+- **Audio Player** — built-in player with seek/volume/download
+- **Pitch Shift** — adjust vocals up/down 12 semitones
+- **Voice Similarity** — blend natural ↔ strong
+- **Volume Mix** — separate vocals/instrumental volume
+- **GPU Accelerated** — Apple MPS or NVIDIA CUDA
+- **100% Local** — no data leaves your machine
 
-  | Model | Best For |
-  |---|---|
-  | Llama 3.3 70B | Most powerful, balanced |
-  | Llama 3.1 8B | Lightning fast responses |
-  | Mixtral 8x7B | Long context window |
-  | Gemma 2 9B | Google's efficient model |
-
-- **Temperature control** — Slider from Focused (0) to Creative (2)
-- **Persistent settings** — Saved to database per user
-
-### 🎨 Appearance
-- **Dark/Light mode** — Toggle with sun/moon icon
-- **No hydration errors** — CSS-based theme switching
-- **Font size control** — Small / Medium / Large
-- **Glass-morphism design** — Beautiful frosted glass UI
-- **Neon accents** — Cyan and purple glow effects
-
-### ✨ Animations & Transitions
-- **Message slide-in** — User messages from right, AI from left
-- **Typing indicator** — Animated bouncing dots while AI thinks
-- **Loading skeletons** — Shimmer effect while content loads
-- **Hover effects** — Cards lift, sidebar items shift
-- **Button glow** — Neon glow on interactive elements
-- **Smooth transitions** — Page and component transitions
+### 🎨 UI & UX
+- Dark/Light mode toggle
+- Glass-morphism design
+- Neon cyan/purple accents
+- Animations — slide-in, pulse, glow
+- Mobile responsive
+- Font size control
 
 ### 👤 Authentication
-- **Email/Password** — Sign up and login
-- **OAuth** — Google authentication support
-- **Session management** — Secure cookie-based sessions
-- **Protected routes** — Middleware redirects unauthenticated users
-
-### ⚙️ Settings Page
-- **Profile** — Display name (saved to DB), email (read-only)
-- **Appearance** — Theme toggle, font size selector
-- **AI Settings** — Model picker, temperature slider
-- **AI Memories** — View, add, delete memories
-- **Data & Privacy** — Export chats, delete all data, logout
-- **About** — App version, tech stack info
+- Email/Password (Supabase)
+- Google OAuth
+- Session cookies
+- Protected routes
 
 ---
 
 ## 🛠️ Tech Stack
 
 ### Frontend
-| Technology | Purpose |
+| Tech | Purpose |
 |---|---|
-| **Next.js 16** | React framework (App Router, Turbopack) |
-| **TypeScript** | Type-safe development |
-| **Mantine UI v7** | Component library |
-| **Zustand** | State management |
-| **React Markdown** | Markdown rendering |
-| **React Syntax Highlighter** | Code block highlighting |
-| **Tabler Icons** | Icon set |
-| **react-textarea-autosize** | Auto-expanding textarea |
-| **Framer Motion** | Animations (installed) |
+| Next.js 16 | React framework (App Router, Turbopack) |
+| TypeScript | Type safety |
+| Mantine UI v7 | Component library |
+| Zustand | State management |
+| React Markdown | Markdown rendering |
+| React Syntax Highlighter | Code highlighting |
+| Tabler Icons | Icons |
+| react-textarea-autosize | Auto-expanding inputs |
 
-### Backend
-| Technology | Purpose |
+### Backend (Chat)
+| Tech | Purpose |
 |---|---|
-| **Groq Cloud** | AI inference (LLMs + Vision) |
-| **Supabase** | Auth, Database (PostgreSQL), RLS |
-| **pdf-parse-fork** | Server-side PDF text extraction |
-| **mammoth** | DOCX text extraction |
+| Groq Cloud | AI inference (LLMs + Vision) |
+| Supabase | Auth, PostgreSQL, RLS |
+| pdf-parse-fork | PDF text extraction |
+| mammoth | DOCX text extraction |
+
+### Backend (Music Server — Python)
+| Tech | Purpose |
+|---|---|
+| FastAPI | REST API server |
+| Uvicorn | ASGI server |
+| PyTorch 2.8 | Deep learning |
+| Demucs 4.0 | Meta's vocal separator |
+| HuBERT (transformers) | Voice feature extraction |
+| librosa | Audio processing |
+| soundfile | Audio I/O |
+| FFmpeg | Audio mixing |
+| RVC v2 (optional) | Studio-quality voice conversion |
+| faiss-cpu | Voice index building |
+| torchcrepe | Pitch detection |
 
 ### Code Execution
-| Technology | Purpose |
+| Tech | Purpose |
 |---|---|
-| **Pyodide v0.27** | Python runtime (WebAssembly) loaded from CDN |
-| **Browser eval()** | JavaScript execution (sandboxed) |
+| Pyodide v0.27 | Python in browser (WASM) |
+| Browser `eval()` | JavaScript sandbox |
 
-### AI Models (via Groq — FREE)
+### AI Models (Groq — Free)
 | Model | Type |
 |---|---|
-| `llama-3.3-70b-versatile` | Text (default) |
-| `llama-3.1-8b-instant` | Text (fast + memory extraction) |
-| `mixtral-8x7b-32768` | Text (long context) |
-| `gemma2-9b-it` | Text (efficient) |
-| `meta-llama/llama-4-scout-17b-16e-instruct` | Vision (image analysis) |
+| llama-3.3-70b-versatile | Text (default) |
+| llama-3.1-8b-instant | Text (fast) |
+| mixtral-8x7b-32768 | Long context |
+| gemma2-9b-it | Efficient |
+| meta-llama/llama-4-scout-17b-16e-instruct | Vision |
 
 ---
 
 ## 📁 Project Structure
 
 ```
-lumivra-ai/
-├── app/
+lumivra-ai/  (a.k.a. synapse-ai/)
+│
+├── app/                              # Next.js App Router
 │   ├── (auth)/
-│   │   ├── login/page.tsx              # Login page
-│   │   └── signup/page.tsx             # Signup page
+│   │   ├── login/page.tsx            # Login page
+│   │   └── signup/page.tsx           # Signup page
 │   ├── api/
 │   │   ├── chat/
-│   │   │   ├── route.ts               # Streaming AI endpoint (+ vision + memory)
-│   │   │   └── title/route.ts          # Auto-generate chat titles
-│   │   ├── memory/
-│   │   │   └── extract/route.ts        # AI memory auto-extraction
-│   │   ├── parse-pdf/route.ts          # Server-side PDF parsing
-│   │   └── auth/callback/route.ts      # OAuth handler
+│   │   │   ├── route.ts              # Streaming AI + vision + memory
+│   │   │   └── title/route.ts        # Auto-generate chat titles
+│   │   ├── memory/extract/route.ts   # AI memory auto-extraction
+│   │   ├── parse-pdf/route.ts        # Server-side PDF parsing
+│   │   └── auth/callback/route.ts    # OAuth handler
 │   ├── chat/
-│   │   ├── layout.tsx                  # Chat layout (sidebar + main + font size)
-│   │   └── page.tsx                    # Chat page
-│   ├── settings/page.tsx               # Settings page (profile, AI, memories)
-│   ├── globals.css                     # Global styles + animations
-│   ├── layout.tsx                      # Root layout (loads Pyodide script)
-│   └── page.tsx                        # Redirects to /login
+│   │   ├── layout.tsx                # Chat layout
+│   │   └── page.tsx                  # Chat page
+│   ├── music/
+│   │   └── page.tsx                  # Music Studio page
+│   ├── settings/page.tsx             # Settings page
+│   ├── globals.css                   # Global styles + animations
+│   ├── layout.tsx                    # Root layout (loads Pyodide)
+│   └── page.tsx                      # Redirects to /login
 │
 ├── components/
 │   ├── chat/
-│   │   ├── ChatArea.tsx                # Main chat + streaming + edit + files + vision
-│   │   ├── MessageBubble.tsx           # Message display + code execution + input modal
-│   │   ├── PromptInput.tsx             # Input + file attach + paste + drag-drop
-│   │   ├── ChatSkeleton.tsx            # Loading skeleton
-│   │   └── TopBar.tsx                  # Theme toggle + settings link
+│   │   ├── ChatArea.tsx              # Main chat area
+│   │   ├── MessageBubble.tsx         # Message + code execution + input modal
+│   │   ├── PromptInput.tsx           # Input + file attach + paste + drag
+│   │   ├── ChatSkeleton.tsx          # Loading skeleton
+│   │   └── TopBar.tsx                # Theme toggle + settings
+│   ├── music/                        # Music Studio UI
+│   │   ├── MusicStudio.tsx           # Main 4-tab UI
+│   │   ├── SongUploader.tsx          # Drag-drop song upload
+│   │   ├── AudioPlayer.tsx           # Custom audio player
+│   │   ├── VoiceTrainer.tsx          # Voice training UI
+│   │   ├── VoiceModelList.tsx        # Manage voice models
+│   │   └── VoiceSwapper.tsx          # Voice swap UI
 │   └── sidebar/
-│       └── Sidebar.tsx                 # Chat list + pin + search + profile
+│       └── Sidebar.tsx               # Chat list + Music link + profile
 │
 ├── lib/
 │   ├── supabase/
-│   │   ├── client.ts                   # Browser Supabase client
-│   │   ├── server.ts                   # Server Supabase client
-│   │   ├── middleware.ts               # Session handler
-│   │   ├── chats.ts                    # Chat/Message DB operations
-│   │   ├── settings.ts                 # User settings operations
-│   │   └── memories.ts                 # AI memory operations
-│   ├── fileParser.ts                   # File parsing (text, PDF, DOCX, images)
-│   └── codeRunner.ts                   # 🆕 Code execution (JS + Python) + input detection
+│   │   ├── client.ts                 # Browser Supabase client
+│   │   ├── server.ts                 # Server Supabase client
+│   │   ├── middleware.ts             # Session handler
+│   │   ├── chats.ts                  # Chat DB operations
+│   │   ├── settings.ts               # Settings DB operations
+│   │   └── memories.ts               # Memory DB operations
+│   ├── contexts/UserContext.tsx      # User context provider
+│   ├── hooks/useLogout.ts            # Logout hook
+│   ├── fileParser.ts                 # File parsing (PDF, DOCX, etc.)
+│   ├── codeRunner.ts                 # Code execution (JS + Python)
+│   ├── notify.ts                     # Notifications
+│   ├── utils.ts                      # Helper functions
+│   └── musicApi.ts                   # Music server API client
 │
 ├── store/
-│   └── chatStore.ts                    # Zustand global state
+│   └── chatStore.ts                  # Zustand state
 │
-├── types/
-│   └── index.ts                        # TypeScript interfaces
+├── types/index.ts                    # TypeScript interfaces
 │
-├── theme.ts                            # Mantine theme config
-├── proxy.ts                            # Next.js 16 middleware
-├── .env.local                          # Environment variables
-├── postcss.config.mjs                  # PostCSS config
-└── README.md                           # This file
+├── music-server/                     # PYTHON AI BACKEND
+│   ├── server.py                     # FastAPI main server
+│   ├── separator.py                  # Demucs vocal separation
+│   ├── trainer.py                    # Voice model training
+│   ├── converter.py                  # Voice conversion
+│   ├── mixer.py                      # FFmpeg audio mixing
+│   ├── rvc_wrapper.py                # RVC v2 integration
+│   ├── setup.py                      # Auto installer (legacy)
+│   ├── requirements.txt              # Python dependencies
+│   ├── RVC/                          # RVC v2 repo (cloned)
+│   │   ├── assets/
+│   │   │   ├── pretrained_v2/        # f0G40k.pth, f0D40k.pth
+│   │   │   ├── hubert/                # hubert_base.pt
+│   │   │   ├── rmvpe/                 # rmvpe.pt
+│   │   │   └── weights/               # Trained models
+│   │   ├── infer/                    # RVC inference scripts
+│   │   ├── tools/                    # RVC tools
+│   │   ├── logs/                      # Training logs per model
+│   │   └── download_models.py        # Pretrained downloader
+│   ├── temp/                          # Temporary audio files
+│   ├── models/                        # Trained voice models metadata
+│   ├── output/                        # Final output files
+│   └── training_data/                 # User voice recordings
+│
+├── .venv/                             # Python virtual environment
+│
+├── .env.local                         # Environment variables (NOT in git)
+├── .gitignore
+├── package.json
+├── pnpm-lock.yaml
+├── theme.ts                           # Mantine theme config
+├── middleware.ts
+├── postcss.config.mjs
+├── next.config.ts
+├── tsconfig.json
+└── README.md
 ```
 
 ---
 
 ## 🗄️ Database Schema
 
-### Tables
+### Tables (Supabase PostgreSQL)
 
-#### `chats`
+**chats**
 | Column | Type | Description |
 |---|---|---|
 | id | UUID | Primary key |
-| user_id | UUID | Foreign key → auth.users |
+| user_id | UUID | FK → auth.users |
 | title | TEXT | Chat title (auto-generated) |
 | icon | TEXT | Emoji icon |
 | is_pinned | BOOLEAN | Pin status |
-| created_at | TIMESTAMPTZ | Creation time |
+| created_at | TIMESTAMPTZ | Created |
 | updated_at | TIMESTAMPTZ | Last activity |
 
-#### `messages`
+**messages**
 | Column | Type | Description |
 |---|---|---|
 | id | UUID | Primary key |
-| chat_id | UUID | Foreign key → chats |
+| chat_id | UUID | FK → chats |
 | role | TEXT | 'user' or 'assistant' |
 | content | TEXT | Message text |
-| attachments | JSONB | File metadata (name, size) |
-| created_at | TIMESTAMPTZ | Creation time |
+| attachments | JSONB | File metadata |
+| created_at | TIMESTAMPTZ | Created |
 
-#### `user_settings`
+**user_settings**
 | Column | Type | Description |
 |---|---|---|
 | id | UUID | Primary key |
-| user_id | UUID | Foreign key → auth.users (unique) |
-| display_name | TEXT | User's display name |
-| model | TEXT | Selected AI model |
-| temperature | FLOAT | AI creativity (0-2) |
-| system_prompt | TEXT | System prompt (reserved) |
-| font_size | TEXT | 'small' / 'medium' / 'large' |
-| created_at | TIMESTAMPTZ | Creation time |
+| user_id | UUID | FK → auth.users (unique) |
+| display_name | TEXT | Display name |
+| model | TEXT | AI model |
+| temperature | FLOAT | 0-2 |
+| font_size | TEXT | small/medium/large |
+| created_at | TIMESTAMPTZ | Created |
 | updated_at | TIMESTAMPTZ | Last update |
 
-#### `user_memories`
+**user_memories**
 | Column | Type | Description |
 |---|---|---|
 | id | UUID | Primary key |
-| user_id | UUID | Foreign key → auth.users |
+| user_id | UUID | FK → auth.users |
 | content | TEXT | Memory fact |
-| created_at | TIMESTAMPTZ | Creation time |
+| created_at | TIMESTAMPTZ | Created |
 
-### Row Level Security (RLS)
-All tables have RLS enabled. Users can only access their own data.
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js 18+
-- pnpm (or npm/yarn)
-- Supabase account
-- Groq Cloud account
-
-### 1. Clone the repo
-```bash
-git clone https://github.com/yourusername/lumivra-ai.git
-cd lumivra-ai
-```
-
-### 2. Install dependencies
-```bash
-pnpm install
-```
-
-### 3. Set up environment variables
-Create `.env.local`:
-```env
-# Supabase
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-
-# Groq
-GROQ_API_KEY=your_groq_api_key
-```
-
-### 4. Set up Supabase database
-Run these SQL queries in Supabase SQL Editor:
+### SQL Setup (run in Supabase SQL Editor)
 
 ```sql
--- Chats table
+-- Tables
 CREATE TABLE chats (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
   user_id UUID REFERENCES auth.users(id) ON DELETE CASCADE,
@@ -326,7 +327,6 @@ CREATE TABLE chats (
   updated_at TIMESTAMPTZ DEFAULT NOW()
 );
 
--- Messages table
 CREATE TABLE messages (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
   chat_id UUID REFERENCES chats(id) ON DELETE CASCADE,
@@ -336,7 +336,6 @@ CREATE TABLE messages (
   created_at TIMESTAMPTZ DEFAULT NOW()
 );
 
--- User settings table
 CREATE TABLE user_settings (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
   user_id UUID REFERENCES auth.users(id) ON DELETE CASCADE UNIQUE,
@@ -349,7 +348,6 @@ CREATE TABLE user_settings (
   updated_at TIMESTAMPTZ DEFAULT NOW()
 );
 
--- User memories table
 CREATE TABLE user_memories (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
   user_id UUID REFERENCES auth.users(id) ON DELETE CASCADE,
@@ -363,7 +361,7 @@ CREATE INDEX idx_chats_pinned ON chats(is_pinned DESC, updated_at DESC);
 CREATE INDEX idx_messages_chat ON messages(chat_id, created_at ASC);
 CREATE INDEX idx_memories_user ON user_memories(user_id, created_at DESC);
 
--- Enable RLS on all tables
+-- Row Level Security
 ALTER TABLE chats ENABLE ROW LEVEL SECURITY;
 ALTER TABLE messages ENABLE ROW LEVEL SECURITY;
 ALTER TABLE user_settings ENABLE ROW LEVEL SECURITY;
@@ -378,63 +376,531 @@ CREATE POLICY "Users manage own settings" ON user_settings FOR ALL USING (auth.u
 CREATE POLICY "Users manage own memories" ON user_memories FOR ALL USING (auth.uid() = user_id);
 ```
 
-### 5. Run the development server
+---
+
+## 🍎 Installation — Mac (M1/M2/M3/M4)
+
+### Prerequisites
 ```bash
-pnpm dev
+# Install Homebrew if not installed
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-Open [http://localhost:3000](http://localhost:3000)
+### Step 1: Install Required Tools
+```bash
+# Node.js & pnpm
+brew install node
+npm install -g pnpm
+
+# Python 3.11 (3.10 also works)
+brew install python@3.11
+
+# Git (usually pre-installed)
+brew install git
+
+# FFmpeg (for audio mixing)
+brew install ffmpeg
+```
+
+### Step 2: Clone Repo
+```bash
+git clone https://github.com/yourusername/lumivra-ai.git
+cd lumivra-ai
+```
+
+### Step 3: Setup Python Virtual Environment
+```bash
+python3.11 -m venv .venv
+source .venv/bin/activate
+```
+You should see `(.venv)` at the start of your terminal prompt.
+
+### Step 4: Install Python Dependencies
+```bash
+cd music-server
+pip install -r requirements.txt
+pip install transformers
+```
+
+PyTorch on Mac (Apple Silicon MPS support):
+```bash
+pip install torch torchaudio
+```
+
+### Step 5: Install Node Dependencies
+```bash
+cd ..
+pnpm install
+```
+
+### Step 6: Create `.env.local`
+In project root:
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+GROQ_API_KEY=your_groq_api_key
+NEXT_PUBLIC_MUSIC_SERVER_URL=http://localhost:8000
+```
+
+### Step 7: Set Python Interpreter in VS Code
+- `Cmd + Shift + P`
+- "Python: Select Interpreter"
+- Choose: `./.venv/bin/python` (Recommended)
+
+✅ Mac setup complete!
 
 ---
 
-## 🧪 Try It Out
+## 🪟 Installation — Windows PC (RTX GPU)
 
-### Test Code Execution
-Ask the AI:
+### Prerequisites — Install These First
+- **Python 3.11** → https://www.python.org/downloads/release/python-31111/
+  - ⚠️ Check "Add Python to PATH" during install
+- **Node.js LTS** → https://nodejs.org/
+- **Git for Windows** → https://git-scm.com/download/win
+- **pnpm**: `npm install -g pnpm`
+- **FFmpeg**: `winget install ffmpeg` (or manual: https://www.gyan.dev/ffmpeg/builds/)
+- **NVIDIA CUDA drivers** (already installed if you have RTX GPU)
+
+### Verify Python Version
+```bash
+py -0
 ```
-Write Python code that takes user's name and age as input then prints "Hello [name], you are [age] years old"
+Should list 3.11 in the available versions.
+
+### Step 1: Clone Repo
+```bash
+cd Desktop
+git clone https://github.com/yourusername/lumivra-ai.git
+cd lumivra-ai
 ```
-1. Click the green ▶ Run button on the code block
-2. Input modal pops up asking for name and age
-3. Fill in values → click Run
-4. See output below the code
 
-### Test Image Understanding
-1. Take a screenshot of any error
-2. Paste (Cmd+V) into chat
-3. Ask "What's this error about?"
-4. AI analyzes the image
+### Step 2: Delete pnpm-workspace.yaml (if exists)
+```bash
+del pnpm-workspace.yaml
+```
 
-### Test AI Memory
-1. Tell AI: "My name is Gautham and I prefer Python"
-2. Go to Settings → AI Memories → see auto-extracted facts
-3. Start a new chat → ask "What's my name?"
-4. AI remembers!
+### Step 3: Install Node Dependencies
+```bash
+pnpm install
+```
 
-### Test File Upload
-- Drag a PDF onto the input area
-- Or click 📎 to pick a file
-- Or paste an image with Cmd+V
-- Ask AI to analyze it
+### Step 4: Setup Python Virtual Environment
+```bash
+py -3.11 -m venv .venv
+.venv\Scripts\activate
+```
+You should see `(.venv)` at the start of your terminal.
+
+### Step 5: Install Python Dependencies
+```bash
+cd music-server
+pip install -r requirements.txt
+pip install transformers
+```
+
+PyTorch with CUDA support (for RTX GPU):
+```bash
+pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu121
+```
+
+### Step 6: Create `.env.local` in Project Root
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+GROQ_API_KEY=your_groq_api_key
+NEXT_PUBLIC_MUSIC_SERVER_URL=http://localhost:8000
+```
+
+### Step 7: Verify GPU Detection
+```bash
+cd music-server
+python -c "import torch; print('CUDA:', torch.cuda.is_available()); print('GPU:', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'None')"
+```
+Should show:
+```
+CUDA: True
+GPU: NVIDIA GeForce RTX 4060 Ti
+```
+
+✅ PC setup complete!
+
+---
+
+## 🎤 RVC Setup (Optional — Studio Quality)
+
+RVC v2 gives professional studio-quality voice conversion. Without it, voice swap uses a simpler encoder that sounds robotic.
+
+### Step 1: Clone RVC
+```bash
+cd music-server
+git clone https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI.git RVC
+cd RVC
+```
+
+### Step 2: Install RVC Dependencies
+Make sure `.venv` is active:
+```bash
+pip install praat-parselmouth pyworld torchcrepe faiss-cpu ffmpeg-python pydub tensorboardX
+pip install fairseq
+```
+
+If fairseq fails:
+```bash
+pip install git+https://github.com/One-sixth/fairseq.git
+```
+
+### Step 3: Create `download_models.py`
+In `music-server/RVC/`:
+
+```python
+import os
+import urllib.request
+
+MODELS = {
+    "assets/pretrained_v2/f0G40k.pth":
+        "https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/pretrained_v2/f0G40k.pth",
+    "assets/pretrained_v2/f0D40k.pth":
+        "https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/pretrained_v2/f0D40k.pth",
+    "assets/hubert/hubert_base.pt":
+        "https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/hubert_base.pt",
+    "assets/rmvpe/rmvpe.pt":
+        "https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/rmvpe.pt",
+}
+
+def download(url, dest):
+    os.makedirs(os.path.dirname(dest), exist_ok=True)
+    if os.path.exists(dest):
+        print(f"Already have: {dest}")
+        return
+    print(f"Downloading: {os.path.basename(dest)}")
+    urllib.request.urlretrieve(url, dest)
+    print(f"Done: {dest}")
+
+for path, url in MODELS.items():
+    download(url, path)
+
+print("\nAll RVC models downloaded!")
+```
+
+### Step 4: Download Pretrained Models (~3GB)
+```bash
+python download_models.py
+```
+⏱️ Takes 10-20 minutes.
+
+### Step 5: Verify RVC Integration
+The `rvc_wrapper.py` is already in `music-server/`. It auto-detects RVC.
+
+Restart server and check logs:
+```bash
+cd ..
+python server.py
+```
+
+When you train a voice, you should see:
+```
+🔥 Using RVC v2 for training
+```
+
+✅ RVC setup complete!
+
+---
+
+## 🚀 Running the Project
+
+You need 2 terminals running simultaneously.
+
+### Terminal 1 — Python Music Server
+
+**Mac:**
+```bash
+cd lumivra-ai/music-server
+source ../.venv/bin/activate
+python3 server.py
+```
+
+**Windows:**
+```bash
+cd lumivra-ai\music-server
+..\.venv\Scripts\activate
+python server.py
+```
+
+You should see:
+```
+╔════════════════════════════════════════════╗
+║       LUMIVRA MUSIC SERVER v1.0.0          ║
+║   Local AI Music Processing Backend        ║
+╠════════════════════════════════════════════╣
+║  Server:    http://localhost:8000          ║
+║  API Docs:  http://localhost:8000/docs     ║
+║  Frontend:  http://localhost:3000          ║
+╚════════════════════════════════════════════╝
+
+INFO: Uvicorn running on http://0.0.0.0:8000
+```
+
+### Terminal 2 — Next.js Frontend
+Both Mac & Windows:
+```bash
+cd lumivra-ai
+pnpm dev
+```
+
+You should see:
+```
+▲ Next.js 16.2.7 (Turbopack)
+- Local:    http://localhost:3000
+- Network:  http://192.168.x.x:3000
+✓ Ready in 2.5s
+```
+
+### Open in Browser
+- Lumivra UI: http://localhost:3000
+- Music API Docs: http://localhost:8000/docs
+- Music Server Status: http://localhost:8000
+
+---
+
+## 🔬 How Each Feature Works
+
+### Chat Streaming
+```
+User types → /api/chat → Groq API →
+Server-Sent Events → UI displays word-by-word
+```
+
+### Code Execution
+```
+User clicks ▶ on code block →
+JS: eval() in sandbox / Python: Pyodide (WASM) →
+Capture output → Display in panel
+```
+
+### AI Memory
+```
+User chats → /api/memory/extract analyzes conversation →
+Extracts facts → Saves to user_memories →
+Loaded into context for all future chats
+```
+
+### Vocal Separation Pipeline
+```
+Song.mp3 → Demucs htdemucs model (GPU) →
+Splits into: vocals.wav + instrumental.wav
+```
+
+### Voice Training Pipeline (with RVC)
+```
+Voice recordings (.m4a/.wav)
+    ↓
+Preprocess: normalize + trim + chunk
+    ↓
+Extract F0 (pitch) with RMVPE
+    ↓
+Extract features with HuBERT
+    ↓
+Build filelist
+    ↓
+Train neural network (200 epochs on GPU)
+    ↓
+Build FAISS index for retrieval
+    ↓
+Save: model.pth + index.index → models/
+```
+
+### Voice Swap Pipeline
+```
+Song + Voice Model
+    ↓
+Stage 1: Demucs separates vocals (0-40%)
+    ↓
+Stage 2: RVC converts vocals to your voice (40-75%)
+    ↓
+Stage 3: FFmpeg mixes new vocals with instrumental (75-100%)
+    ↓
+Final song.mp3 with YOUR voice ✅
+```
+
+### Job Tracking
+```
+1. User uploads file → Server creates job UUID
+2. Job runs in background (FastAPI BackgroundTasks)
+3. Frontend polls /jobs/{id} every 1.5s
+4. Progress 0% → 100%, status: queued → processing → complete
+5. Result URLs ready when complete
+```
+
+---
+
+## 📊 Music Server API
+
+| Endpoint | Method | Purpose |
+|---|---|---|
+| `/` | GET | Server health + GPU info |
+| `/separate` | POST | Upload song for vocal separation |
+| `/train` | POST | Upload recordings to train voice |
+| `/convert` | POST | Full voice swap (separate + convert + mix) |
+| `/models` | GET | List trained voice models |
+| `/models/{name}` | DELETE | Delete a voice model |
+| `/jobs/{id}` | GET | Get job status + progress |
+| `/jobs/{id}` | DELETE | Delete job + temp files |
+| `/jobs` | GET | List all jobs |
+| `/files/{filename}` | GET | Download output file |
+| `/cleanup` | POST | Clean files >24h old |
+
+### Example Job Response
+```json
+{
+  "id": "abc-123",
+  "type": "full_conversion",
+  "status": "complete",
+  "progress": 100,
+  "status_message": "Done!",
+  "result": {
+    "download_url": "/files/abc-123_output.mp3",
+    "filename": "abc-123_output.mp3",
+    "file_size_mb": 4.2,
+    "duration": 183.5
+  }
+}
+```
+
+---
+
+## 🐛 Troubleshooting
+
+### Chat Issues
+**Yellow underlines in VS Code on Python imports**
+- Wrong interpreter selected
+- Fix: `Cmd/Ctrl + Shift + P` → "Python: Select Interpreter" → Choose `.venv` one
+
+**"Module not found" errors**
+- Install missing package: `pip install <package>`
+- Make sure `.venv` is active (terminal shows `(.venv)`)
+
+### Music Server Issues
+**Demucs model fails to download**
+- First run downloads ~80MB model (slow networks may time out)
+- Manually verify: server logs should show "Downloading htdemucs model"
+- Just retry — it'll resume
+
+**"FFmpeg not found"**
+- Install: Mac `brew install ffmpeg` | Windows `winget install ffmpeg`
+- Restart terminal after install
+
+**Output file not found error**
+- FFmpeg missing → mixer saved as `.wav` not `.mp3`
+- Solution above will fix
+
+**CUDA out of memory (PC)**
+- Lower batch size in `rvc_wrapper.py`: change `-bs 4` to `-bs 2`
+
+**Voice sounds robotic**
+- Using fallback encoder (not RVC)
+- Train with more data (15-30 min) + more epochs (200+)
+- Install RVC for professional quality
+
+### RVC Issues
+**"fairseq" install fails**
+```bash
+pip install git+https://github.com/One-sixth/fairseq.git
+```
+
+**"No module named infer.modules"**
+- RVC didn't clone properly
+- Delete `RVC/` folder and re-clone
+
+**Mac MPS errors with RVC**
+- RVC has limited Mac GPU support
+- Force CPU in `rvc_wrapper.py` (slower but reliable)
+
+### Browser Issues
+**UI laggy on PC**
+- Enable hardware acceleration in browser settings
+- Use Chrome/Edge (not Firefox)
+- Set browser to use NVIDIA GPU (NVIDIA Control Panel)
+
+**`pnpm dev` says "package field missing"**
+- Delete `pnpm-workspace.yaml`
+- Or use: `pnpm install --ignore-workspace`
+
+---
+
+## 🗺️ Roadmap & Scaling
+
+### ✅ Completed Features
+- [x] AI chat with streaming
+- [x] Stop generation / edit messages
+- [x] File attachments (PDF, DOCX, code, images)
+- [x] Image vision analysis
+- [x] AI memory (auto + manual)
+- [x] Pin chats / search / export
+- [x] Dark/light mode
+- [x] Code execution (JS + Python)
+- [x] Interactive input modal
+- [x] Vocal separation (Demucs)
+- [x] Voice training (custom encoder + RVC)
+- [x] Voice swap in songs (full pipeline)
+- [x] Custom audio player
+- [x] GPU acceleration (MPS + CUDA)
+- [x] Mobile responsive
+
+### 🔜 Planned
+- [ ] Voice input (Web Speech API)
+- [ ] Share chat via public link
+- [ ] Export single chat as PDF
+- [ ] Keyboard shortcuts (Cmd+K)
+- [ ] Search inside messages
+- [ ] Token usage tracking
+- [ ] More languages in code execution
+- [ ] Lyrics overlay on music
+- [ ] Voice preset library
+- [ ] Real-time waveform viz
+
+### Scaling to Public SaaS
+
+**Stage 1 — Launch (1-100 users)**
+```
+Single RunPod GPU + Redis queue + Cloudflare R2
+Cost: ~$50-100/month
+```
+
+**Stage 2 — Growing (100-1000 users)**
+```
+Multiple GPU pods + BullMQ + PostgreSQL + CDN
+Cost: ~$200-500/month
+```
+
+**Stage 3 — Real SaaS (1000+ users)**
+```
+AWS/GCP auto-scaling + Kubernetes + Stripe + tiered limits
+Cost: scales with revenue
+```
+
+To deploy: just swap `localhost:8000` → your RunPod URL in `.env.local`. Code stays the same.
 
 ---
 
 ## 🔒 Security
 
-- ✅ **Row Level Security (RLS)** — Users can only access own data
-- ✅ **Server-side API keys** — Groq API key never exposed to client
-- ✅ **Model validation** — Prevents injection via model parameter
-- ✅ **Temperature clamping** — Restricted to 0-2 range
-- ✅ **System prompt hardcoded** — Cannot be modified by users
-- ✅ **File size limits** — Max 5MB (4MB for images)
-- ✅ **Auth middleware** — Protected routes redirect to login
-- ✅ **Session cookies** — Secure, HttpOnly
-- ✅ **Code execution sandboxed** — JS runs in browser context, Python in WASM
+- ✅ Row Level Security — Users only access own data
+- ✅ Server-side API keys — Groq key never exposed
+- ✅ Model validation — Prevents injection
+- ✅ Temperature clamping — 0-2 range only
+- ✅ System prompt hardcoded — User can't modify
+- ✅ File size limits — 5MB chat / 50MB music
+- ✅ Auth middleware — Protected routes
+- ✅ CORS protected — Music server only allows Lumivra
+- ✅ Code execution sandboxed — JS in browser, Python in WASM
+- ✅ 100% local music processing — Audio never leaves machine
 
 ---
 
 ## 📦 Key Dependencies
 
+### Frontend (package.json)
 ```json
 {
   "next": "^16.2.7",
@@ -450,84 +916,141 @@ Write Python code that takes user's name and age as input then prints "Hello [na
   "react-textarea-autosize": "^8.x",
   "@tabler/icons-react": "^3.x",
   "pdf-parse-fork": "^1.x",
-  "mammoth": "^1.x",
-  "framer-motion": "^11.x"
+  "mammoth": "^1.x"
 }
 ```
 
-**External (loaded via CDN):**
-- `pyodide@0.27.5` — Python runtime for in-browser code execution
+### Backend (music-server/requirements.txt)
+```
+fastapi==0.115.0
+uvicorn==0.30.0
+python-multipart==0.0.9
+torch==2.8.0
+torchaudio==2.8.0
+demucs==4.0.1
+librosa==0.11.0
+soundfile==0.13.1
+numpy
+scipy
+aiofiles
+psutil
+transformers
+```
+
+### RVC Extras
+```
+fairseq
+praat-parselmouth
+pyworld
+torchcrepe
+faiss-cpu
+ffmpeg-python
+pydub
+tensorboardX
+```
+
+### External Models (Downloaded Automatically)
+- Demucs htdemucs (~80MB) — auto on first separation
+- HuBERT base (~360MB) — auto on first training
+- RVC pretrained (~3GB) — manual via `download_models.py`
+- Pyodide v0.27 — loaded from CDN
 
 ---
 
-## 🗺️ Roadmap
+## 📈 Achievement Stats
 
-### ✅ Completed
-- [x] Chat with AI (streaming)
-- [x] Stop generation
-- [x] Edit messages & regenerate
-- [x] File attachments (code, PDF, DOCX, text, data)
-- [x] Image understanding (Groq Vision)
-- [x] AI Memory (auto-extract + manual)
-- [x] Dark/Light mode
-- [x] Pin chats
-- [x] Settings page (model, temperature, font size)
-- [x] Animations & transitions
-- [x] Export chats (JSON)
-- [x] Delete all data
-- [x] Paste & drag-drop files
-- [x] **Code execution (JavaScript + Python)** ⚡
-- [x] **Interactive input modal for code execution** 📥
+```
+─────────────────────────────────────────
+TOTAL FILES CREATED:    40+
+LINES OF CODE:          ~8000+
+PHASES COMPLETED:       5/5
+EXTERNAL APIS:          Only Groq (free)
+LOCAL AI MODELS:        4 (Demucs, HuBERT, RMVPE, RVC)
+GPU ACCELERATION:       Apple MPS + NVIDIA CUDA
+PRIVACY:                100% local music
+─────────────────────────────────────────
 
-### 🔜 Planned
-- [ ] Voice input (browser Speech API)
-- [ ] Deploy to Vercel
-- [ ] Share chat via public link
-- [ ] Export single chat as PDF/Markdown
-- [ ] Keyboard shortcuts (Cmd+K, etc.)
-- [ ] Search inside messages
-- [ ] Mobile-responsive polish
-- [ ] Token usage tracking
-- [ ] Code theme picker
-- [ ] Support more languages in code execution (HTML preview, SQL, etc.)
+Built equivalent of:
+  • LALAL.ai ($20/mo)        — vocal separation ✅
+  • ElevenLabs ($30/mo)      — voice cloning ✅
+  • Kits.ai ($24/mo)         — voice swap in songs ✅
+  • Musicfy ($25/mo)         — AI music tools ✅
+  • ChatGPT Plus ($20/mo)    — AI chat + code ✅
+
+Combined cost normally: ~$120/month
+Your cost: $0
+─────────────────────────────────────────
+```
 
 ---
 
 ## 🤝 Contributing
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
----
+This project is for portfolio/showcase only and not accepting contributions.
 
 ## 📄 License
+Copyright © 2026 Gautham Jayesh
 
-This project is licensed under the MIT License.
+This repository is published for portfolio and demonstration purposes only.
 
----
+LUMIVRA AI is a personal project published to showcase software engineering, AI integration, and full-stack development skills. The source code is not open source and may not be copied, modified, redistributed, or used without permission.
 
 ## 👤 Author
-
 **Gautham Jayesh**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Gautham Jayesh](https://linkedin.com/in/yourprofile)
-- Email: gautham.xc@gmail.com
 
----
+- 💼 GitHub: [@yourusername](https://github.com/yourusername)
+- 💼 LinkedIn: Gautham Jayesh
+- 📧 Email: gautham.xc@gmail.com
 
 ## 🙏 Acknowledgments
-
-- [Groq](https://groq.com) — Lightning-fast AI inference
-- [Supabase](https://supabase.com) — Backend-as-a-Service
-- [Mantine](https://mantine.dev) — Beautiful React components
-- [Next.js](https://nextjs.org) — React framework
-- [Pyodide](https://pyodide.org) — Python in the browser
-- [Vercel](https://vercel.com) — Deployment platform
+- Groq — Lightning-fast AI inference
+- Supabase — Backend-as-a-Service
+- Mantine — Beautiful React components
+- Next.js — React framework
+- Pyodide — Python in browser
+- Meta Demucs — Vocal separation AI
+- RVC Project — Voice conversion AI
+- HuggingFace — Model hosting
 
 ---
+
+<div align="center">
+
+### 🚀 DEVELOPED BY GAUTHAM JAYESH 🚀
+
+Next.js 16 • TypeScript • Supabase • Groq Cloud • Mantine UI
++ Python • FastAPI • PyTorch • Demucs • RVC v2 • CUDA
+
+```
+╔═══════════════════════════════════════════════╗
+║                                               ║
+║   A Full-Stack AI Platform                    ║
+║   Built Locally • Runs Privately             ║
+║   No Subscriptions • No Data Leaks           ║
+║                                               ║
+║   Made with ❤️  in 1 Day                     ║
+║                                               ║
+╚═══════════════════════════════════════════════╝
+```
+
+</div>
+
+---
+
+## 🤖 Context for AI Assistants
+
+If you're an AI continuing development on this project, here's the current state:
+
+- **Status:** All 5 phases complete (chat, code execution, file support, AI memory, music studio).
+- **Frontend:** Next.js 16 (App Router/Turbopack) + TypeScript + Mantine UI v7 + Zustand, at repo root.
+- **Backend (Chat):** Next.js API routes (`/app/api/`) using Groq Cloud (free tier) + Supabase (auth/DB/RLS).
+- **Backend (Music):** Separate Python FastAPI server in `/music-server/`, runs on port 8000, uses Demucs + HuBERT + optional RVC v2 for voice cloning/swap. GPU accelerated (MPS on Mac, CUDA on Windows/RTX).
+- **Two servers must run simultaneously:** Next.js (port 3000) + Python music server (port 8000).
+- **Database:** Supabase Postgres with 4 tables (`chats`, `messages`, `user_settings`, `user_memories`) — full SQL schema with RLS policies is included above.
+- **Next planned features:** voice input, chat sharing, PDF export of chats, keyboard shortcuts, in-chat search, token tracking, lyrics overlay, voice preset library, waveform viz.
+- **Scaling plan:** currently localhost-only; designed to swap `NEXT_PUBLIC_MUSIC_SERVER_URL` to a RunPod GPU endpoint for production deployment without code changes.
+
+When asked to continue, check which planned feature is being worked on, follow the existing file structure/conventions above, and respect the security constraints listed in the Security section.
+
 
 <div align="center">
 
